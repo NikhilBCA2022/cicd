@@ -48,14 +48,14 @@ jobs:
           with:
            server_address: smtp.gmail.com
            server_port: 587
-           username: your_email@gmail.com
-           password: zozs zxgm wofs fkqn
+           username: nikhil89041@gmail.com
+           password: mbop rmsk vqav cbnh
            subject: "✅ CI Build Success - ${{ github.repository }}"
            body: |
             The build for ${{ github.repository }} on branch ${{ github.ref_name }} succeeded.
             Commit: ${{ github.sha }}
-           to: nikhil89041@gmail.com
-           from: awsmine12345@gmail.com
+           to: awsmine12345@gmail.com
+           from: nikhil89041@gmail.com
 
         
          
