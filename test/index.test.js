@@ -1,5 +1,13 @@
-function add(a, b) {
-  return a + b;
-}
+const assert= require('assert');
+const {add}= require('../src/index');
 
-module.export = add;
+
+describe('Addition Function ',()=>{
+    it('should return 5 for add(2,3)',()=>{
+        assert.strictEqual(add(2,3),5);
+    });
+
+    it('should return - for add(-2,1)',()=>{
+        assert.strictEqual(add(-2,1),-1);
+    });
+})

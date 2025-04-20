@@ -27,6 +27,20 @@ jobs:
 
         - name: Run tests
           run: npm test
+
+        - name: convert it into a zip file
+          run : |
+            mkdir output
+            cp -r . output/
+            cp package.json output
+            zip -r output.zip output
+        - name: Upload artifact
+          uses: actions/upload-artifact@v2
+          with:
+            name: output-zip
+            path: output.zip
+           
+          
     
         
          
