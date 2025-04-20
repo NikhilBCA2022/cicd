@@ -31,9 +31,10 @@ jobs:
         - name: convert it into a zip file
           run : |
             mkdir output
-            cp -r . output/
+            cp -r src output/
             cp package.json output
             zip -r output.zip output
+            
         - name: Upload artifact
           uses: actions/upload-artifact@v2
           with:
