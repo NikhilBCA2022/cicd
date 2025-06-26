@@ -7,11 +7,6 @@ pipeline {
                 echo 'Cloning repo...'
             }
         }
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
-        
+       
     }
 }
